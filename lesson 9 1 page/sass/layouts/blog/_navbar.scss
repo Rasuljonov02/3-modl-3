@@ -1,0 +1,107 @@
+@use "../../utils/mixins";
+.top_menu {
+	padding: 23px 61px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.icon {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		p {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			@include mixins.size(#292d32, 14px, 400);
+		}
+	}
+}
+
+.menu_bar {
+	width: 100%;
+	height: 100px;
+	background-color: #003f62;
+	padding: 23px 61px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.logo {
+		display: flex;
+		align-items: center;
+		gap: 85px;
+		.input {
+			display: flex;
+			width: 438px;
+			height: 56px;
+			padding-left: 0px;
+			align-items: center;
+			gap: 10px;
+			border-radius: 20px;
+			background: #fff;
+			button {
+				@include mixins.btn;
+			}
+		}
+	}
+	.links {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+	p {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		@include mixins.size(#fff, 14px, 400);
+	}
+}
+
+input {
+	border: none;
+	padding: 0 1rem;
+}
+
+.menus {
+ height: 71px;
+ background: #F4F4F4;
+	padding: 23px 61px;
+	@include mixins.center;
+
+	.menu {
+		display: flex;
+		align-items: center;
+		gap: 100px;
+		.types {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			a{
+				@include mixins.size(#3a3a3a, 16px, 500);
+    display: flex;
+				gap: 5px;
+				text-decoration: none;
+			}
+			p {
+				display: flex;
+				align-items: center;
+				gap: 16px;
+			}
+		}
+	}
+	h4 {
+		@include mixins.size(#003f62, 16px, 700);
+	}
+}
+.categories {
+	display: flex;
+	width: 218px;
+	height: 70px;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	flex-shrink: 0;
+	@include mixins.size(#fff, 16px, 500);
+
+	background: var(--b, #eda415);
+}

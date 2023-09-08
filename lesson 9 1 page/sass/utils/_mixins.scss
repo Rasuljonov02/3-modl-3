@@ -1,0 +1,30 @@
+@mixin size($color, $size, $weight, $spacing: null) {
+	color: $color;
+	font-family: Poppins;
+	font-size: $size;
+	font-style: normal;
+	font-weight: $weight;
+	line-height: normal;
+	@if $spacing != null {
+		letter-spacing: $spacing;
+	}
+}
+
+@mixin center {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+@mixin btn {
+
+		display: flex;
+		width: 132px;
+		height: 56px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		color: #fff;
+		border-radius: 20px;
+		background: var(--b, #eda415);
+
+}

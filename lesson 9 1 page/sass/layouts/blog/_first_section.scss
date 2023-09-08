@@ -1,0 +1,105 @@
+@use "../../utils/mixins";
+.first_section {
+	padding: 30px 61px;
+
+	.home {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		p {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+		}
+	}
+
+	.games {
+		padding: 50px 0;
+		display: flex;
+		// align-items: center;
+		gap: 50px;
+	}
+	.top_btn {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+		.btn_1 {
+			display: flex;
+			width: 187px;
+			height: 60px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border-radius: 20px;
+			border: 1px solid #8f8f8f;
+  @include mixins.size(#373737,20px,500);
+
+		}
+		.btn_2 {
+			display: flex;
+			width: 187px;
+			height: 60px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border-radius: 20px;
+			background:  #003f62;
+   color: white;
+  @include mixins.size(#fff,20px,500);
+
+		}
+	}
+}
+
+.jos {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	.jos_1 {
+		display: flex;
+		gap: 30px;
+	}
+}
+.play {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 23px;
+	.color {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+	.in p {
+		@include mixins.size(#30bd57, 20px, 500);
+	}
+	h2 {
+		@include mixins.size(#003f62, 30px, 500);
+	}
+	h3 {
+		@include mixins.size(#003f62, 30px, 600);
+	}
+	h4 {
+		@include mixins.size(#232323, 20px, 500);
+	}
+	p {
+		@include mixins.size(#5d5d5d, 16px, 400);
+	}
+	.text {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+}
+
+.btns {
+	button {
+		@include mixins.btn;
+	}
+}
+.share {
+	display: flex;
+	gap: 30px;
+}

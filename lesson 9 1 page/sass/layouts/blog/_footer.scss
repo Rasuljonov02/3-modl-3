@@ -1,0 +1,80 @@
+@import "../../utils/mixins";
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 511px;
+	// flex-shrink: 0;
+	background: #e2f4ff;
+	padding: 35px 61px;
+}
+
+.subscribe {
+	display: flex;
+	width: 1320px;
+	height: 139px;
+	justify-content: center;
+	align-items: center;
+	gap: 137px;
+	flex-shrink: 0;
+	border-radius: 20px;
+	background: #fff;
+	h2 {
+		@include size(#1b5a7d, 30px, 700);
+	}
+	.input_footer {
+		display: flex;
+		width: 388px;
+		height: 63px;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 1rem;
+		gap: 10px;
+		border-radius: 20px;
+		background: #eda415;
+		p {
+			@include size(#fff, 14px, 600);
+		}
+	}
+	.call {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		p {
+			@include size(#606060, 14px, 600);
+		}
+	}
+}
+
+.foot {
+	margin-top: 80px;
+	display: flex;
+	// justify-content: space-between;
+	gap: 220px;
+	h4 {
+		@include size(#1b5a7d, 20px, 600);
+	}
+	p {
+		@include size(#1b5a7d, 14px, 400);
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
+}
+.info_1 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 20px;
+	.foot_icons {
+		display: flex;
+		gap: 40px;
+	}
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
